@@ -44,8 +44,17 @@ map <F4> :emenu <C-Z>
 set modeline
 set modelines=5
 
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+set list
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
 " highlight trailing space as error and tabs in general
-highlight TabCharacters ctermbg=LightGray guibg=LightGray
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+"highlight TabCharacters ctermbg=LightGray guibg=LightGray
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match TabCharacters "\t" containedin=ALL
 autocmd Syntax * syn match ExtraWhitespace excludenl "\s\+$" containedin=ALL
