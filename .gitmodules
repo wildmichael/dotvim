@@ -22,3 +22,6 @@
 [submodule "bundle/emacsmodeline"]
 	path = bundle/emacsmodeline
 	url = git://github.com/vim-scripts/emacsmodeline.vim.git
+[submodule "bundle/LaTeX-Suite"]
+	path = bundle/LaTeX-Suite
+	url = git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git
