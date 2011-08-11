@@ -25,3 +25,6 @@
 [submodule "bundle/LaTeX-Suite"]
 	path = bundle/LaTeX-Suite
 	url = git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/vim-scripts/taglist.vim.git
