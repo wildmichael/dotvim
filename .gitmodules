@@ -13,3 +13,6 @@
 [submodule "bundle/gnupg"]
 	path = bundle/gnupg
 	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
+[submodule "bundle/cvim"]
+	path = bundle/cvim
+	url = git://github.com/vim-scripts/c.vim.git
