@@ -19,3 +19,6 @@
 [submodule "bundle/Smart-Tabs"]
 	path = bundle/Smart-Tabs
 	url = git://github.com/vim-scripts/Smart-Tabs.git
+[submodule "bundle/emacsmodeline"]
+	path = bundle/emacsmodeline
+	url = git://github.com/vim-scripts/emacsmodeline.vim.git
