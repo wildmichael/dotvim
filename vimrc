@@ -52,8 +52,8 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 " highlight trailing space as error and tabs in general
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+highlight NonText ctermfg=Cyan
+highlight SpecialKey ctermfg=Cyan
 "highlight TabCharacters ctermbg=LightGray guibg=LightGray
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match TabCharacters "\t" containedin=ALL
