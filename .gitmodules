@@ -40,3 +40,6 @@
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = git://github.com/rainux/vim-vala.git
+[submodule "bundle/Tagbar"]
+	path = bundle/Tagbar
+	url = git://github.com/vim-scripts/Tagbar.git
