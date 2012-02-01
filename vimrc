@@ -44,6 +44,12 @@ map <F4> :emenu <C-Z>
 set modeline
 set modelines=5
 
+" persistent undo
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=100000
+
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 set list
