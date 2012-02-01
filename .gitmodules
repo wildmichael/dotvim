@@ -49,3 +49,6 @@
 [submodule "bundle/FuzzyFinder"]
 	path = bundle/FuzzyFinder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/NERDTree"]
+	path = bundle/NERDTree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
