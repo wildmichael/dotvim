@@ -96,3 +96,21 @@ autocmd FileType python set cinoptions= nocindent shiftwidth=2 expandtab
 
 " OpenFOAM/FreeFOAM
 autocmd BufRead *.[CH] set expandtab shiftwidth=4 filetype=cpp cindent cinoptions=+s-2,(s,U1,is,g0,Ws,l1,t0 cinkeys=0{,0},0),:,!^F,o,O,e
+
+" Complete options (disable preview scratch window)
+set completeopt=menu,menuone,longest
+" Limit popup menu height
+set pumheight=15
+
+" SuperTab option for context aware completion
+let g:SuperTabDefaultCompletionType="context"
+
+" Disable auto popup, use <Tab> to autocomplete
+let g:clang_complete_auto=0
+" Show clang errors in the quickfix window
+let g:clang_complete_copen=1
+
+" Use libclang
+let g:clang_use_library=1
+" location of libclang
+let g:clang_library_path='/home/mwild/Software/clang/20111014-4c7f1c/lib'
