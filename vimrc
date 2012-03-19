@@ -67,7 +67,7 @@ autocmd Syntax * syn match TabCharacters "\t" containedin=ALL
 autocmd Syntax * syn match ExtraWhitespace excludenl "\s\+$" containedin=ALL
 " highlight anything beyond column 80
 highlight OverLength ctermbg=lightred ctermfg=black guibg=#592929
-match OverLength /\%>79v.\+/
+autocmd Syntax * syn match OverLength /\%>79v.\+/
 if exists('+colorcolumn')
    set colorcolumn=80
 endif
