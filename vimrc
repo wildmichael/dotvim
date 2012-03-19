@@ -52,7 +52,7 @@ set undolevels=1000
 set undoreload=100000
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nmap <leader>l :set list! number!<CR>
 set list
 
 " Use the same symbols as TextMate for tabstops and EOLs
