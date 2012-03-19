@@ -5,6 +5,9 @@ colorscheme delek
 
 au!
 
+" override highlighting of special characters
+au ColorScheme * hi Special cterm=NONE ctermfg=Red gui=NONE guifg=deeppink
+
 filetype plugin indent on
 filetype on " enable filetype detection
 
@@ -24,9 +27,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 " set colors
-set t_Co=8
-set t_Sb=^[4%dm
-set t_Sf=^[3%dm
+set t_Co=256
 
 set autowrite
 
