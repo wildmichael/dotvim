@@ -94,13 +94,16 @@ nnoremap W :%s/[\r \t]\+$//e<CR>:RetabIndent!<CR>
 let fortran_do_enddo=1
 
 " C/C++ indenting (would like FileType c,cpp, but that kills OpenFOAM below)
-autocmd BufRead *.c,*.cpp,*.cxx,*.cc,*.h,*.hpp,*.hxx,*.hh set cindent cinoptions=(0,g0,W2s,u0,U0 preserveindent copyindent softtabstop=0 shiftwidth=2 tabstop=2 autoindent smarttab
+autocmd BufRead *.[ch],*.[ch][px][px],*.cc,*.hh set expandtab shiftwidth=4 filetype preserveindent
+autocmd BufRead *.[ch],*.[ch][px][px],*.cc,*.hh set copyindent softtabstop=4 tabstop=4 autoindent smarttab
+autocmd BufRead *.[ch],*.[ch][px][px],*.cc,*.hh set cindent cinoptions=(0,g0,W2s,u0,U0
 
 " Python
 autocmd FileType python set cinoptions= nocindent shiftwidth=2 expandtab
 
 " OpenFOAM/FreeFOAM
-autocmd BufRead *.[CH] set expandtab shiftwidth=4 filetype=cpp cindent cinoptions=+s-2,(s,U1,is,g0,Ws,l1,t0 cinkeys=0{,0},0),:,!^F,o,O,e
+autocmd BufRead *.[CH] set expandtab shiftwidth=4 filetype=cpp
+autocmd BufRead *.[CH] set cindent cinoptions=+s-2,(s,U1,is,g0,Ws,l1,t0 cinkeys=0{,0},0),:,!^F,o,O,e
 
 " Complete options (disable preview scratch window)
 set completeopt=menu,menuone,longest
