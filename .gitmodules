@@ -40,15 +40,9 @@
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = git://github.com/rainux/vim-vala.git
-[submodule "bundle/Tagbar"]
-	path = bundle/Tagbar
-	url = git://github.com/vim-scripts/Tagbar.git
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = git://github.com/vim-scripts/L9.git
 [submodule "bundle/FuzzyFinder"]
 	path = bundle/FuzzyFinder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
-[submodule "bundle/NERDTree"]
-	path = bundle/NERDTree
-	url = git://github.com/vim-scripts/The-NERD-tree.git
